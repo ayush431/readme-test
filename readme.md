@@ -66,12 +66,16 @@ filename.json
 ```
 ## Training
 
-- Apart from these steps-
+Apart from these steps-
 
 **step1**-In the cfg folder make a copy of the file yolov4-tiny-custom.cfg now rename the copy file to yolov4-tiny-obj.cfg.
+
 **step2**-Change line classes=80 to your number of objects in each of 2 yolo layers.
+
 **step3**-Change [filters=255] to filters=(classes + 5)x3 in the 2 convolutional layer immediately before each 2 yolo layers.If you have 6 classes filters=33.
+
 **step4**-Download the pre trained weights from the link [yolov4-tiny.conv.29](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.conv.29) and save it in the darknet-master folder.
+
 
 all the steps are same as `darknet_yolov4_object_detection/training` directory.
 
